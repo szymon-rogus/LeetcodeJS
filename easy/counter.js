@@ -8,6 +8,7 @@ export var createCounter = function(n) {
 };
 
 /// https://leetcode.com/problems/counter-ii
+
 export var createCounter2 = function(init) {
     let currentCount = init;
 
