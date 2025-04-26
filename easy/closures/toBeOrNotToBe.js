@@ -1,6 +1,6 @@
 /// https://leetcode.com/problems/to-be-or-not-to-be
 
-export var expect = function(val) {
+export var expect = (val) => {
 
     return {
         toBe : (other) => {

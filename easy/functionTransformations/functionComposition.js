@@ -1,8 +1,8 @@
 /// https://leetcode.com/problems/function-composition/description
 
-export var compose = function(functions) {
+export var compose = (functions) => {
 
-    return function(x) {
+    return (x) => {
         functions.reverse().forEach(fn => x = fn(x));
         return x;
     }

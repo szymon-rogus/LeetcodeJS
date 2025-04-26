@@ -1,8 +1,10 @@
-import './easy/arrayPrototypeLast.js'
-import {createCounter, createCounter2} from "./easy/counter.js";
-import {filter} from "./easy/filterElementsfromArray.js";
-import {compose} from "./easy/functionComposition.js";
-import {sleep} from "./easy/sleep.js";
-import {sortBy} from "./easy/sortBy.js";
-import {cancellable} from "./easy/timeoutCancellation.js";
-import {expect} from "./easy/toBeOrNotToBe.js";
+import {map} from "./easy/basciArrayTransformations/applyTransformOverEachElementInArray.js";
+import './easy/basciArrayTransformations/arrayPrototypeLast.js'
+import {createCounter, createCounter2} from "./easy/closures/counter.js";
+import {filter} from "./easy/basciArrayTransformations/filterElementsfromArray.js";
+import {compose} from "./easy/functionTransformations/functionComposition.js";
+import {sleep} from "./easy/promisesAndTime/sleep.js";
+import {sortBy} from "./easy/json/sortBy.js";
+import {cancellable} from "./easy/promisesAndTime/timeoutCancellation.js";
+import {expect} from "./easy/closures/toBeOrNotToBe.js";
+import {memoize} from "./easy/functionTransformations/Memoize.js";

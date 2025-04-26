@@ -1,19 +1,19 @@
-/// /?envType=study-plan-v2&envId=30-days-of-javascript
+/// https://leetcode.com/problems/array-wrapper
 
-export var ArrayWrapper = function(nums) {
+export var ArrayWrapper = (nums) => {
     this.arr = nums;
 };
 
 /**
  * @return {number}
  */
-ArrayWrapper.prototype.valueOf = function() {
+ArrayWrapper.prototype.valueOf = () => {
     return this.arr.reduce((sum, value) => sum + value, 0);
 }
 
 /**
  * @return {string}
  */
-ArrayWrapper.prototype.toString = function() {
+ArrayWrapper.prototype.toString = () => {
     return '[' + this.arr + ']';
 }

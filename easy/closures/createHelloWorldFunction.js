@@ -1,8 +1,8 @@
 /// https://leetcode.com/problems/create-hello-world-function
 
-export var createHelloWorld = function() {
+export var createHelloWorld = () => {
 
-    return function(...args) {
+    return (...args) => {
         return "Hello World";
     }
 };

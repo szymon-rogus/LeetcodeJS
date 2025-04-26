@@ -1,7 +1,7 @@
 /// https://leetcode.com/problems/chunk-array
 /// Generic solution
 
-export var chunk = function(arr, size) {
+export var chunk = (arr, size) => {
     let chunkArr = [];
     let chunk = [];
     for (let i = 0; i < arr.length; i++) {

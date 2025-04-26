@@ -1,6 +1,6 @@
 /// https://leetcode.com/problems/memoize
 
-export function memoize(fn) {
+export let memoize = (fn) => {
     let cachedParams = new Map();
 
     return (...args) => {

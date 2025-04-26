@@ -1,15 +1,15 @@
 /// https://leetcode.com/problems/counter
 
-export var createCounter = function(n) {
+export var createCounter = (n) => {
 
-    return function() {
+    return () => {
         return n++;
     };
 };
 
 /// https://leetcode.com/problems/counter-ii
 
-export var createCounter2 = function(init) {
+export var createCounter2 = (init) => {
     let currentCount = init;
 
     return {
