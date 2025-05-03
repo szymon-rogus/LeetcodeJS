@@ -5,9 +5,9 @@
  * @param {number} t milliseconds
  * @return {Function}
  */
-export var timeLimit = function(fn, t) {
+export var timeLimit = (fn, t) => {
 
-    return async function(...args) {
+    return async (...args) => {
         let resolved = new Promise(resolve => resolve(fn(...args)));
         let reject = new Promise((resolve, reject) =>
             setTimeout(() => reject('Time Limit Exceeded'), t));

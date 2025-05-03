@@ -2,7 +2,5 @@
 
 export var createHelloWorld = () => {
 
-    return (...args) => {
-        return "Hello World";
-    }
+    return (...args) => "Hello World";
 };

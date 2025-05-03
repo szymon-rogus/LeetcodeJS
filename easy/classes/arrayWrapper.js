@@ -7,7 +7,7 @@ export var ArrayWrapper = (nums) => {
 /**
  * @return {number}
  */
-ArrayWrapper.prototype.valueOf = function () {
+ArrayWrapper.prototype.valueOf = () => {
     return this.arr.reduce((sum, value) => sum + value, 0);
 }
 

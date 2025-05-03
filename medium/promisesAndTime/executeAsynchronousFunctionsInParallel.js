@@ -4,7 +4,7 @@
  * @param {Array<Function>} functions
  * @return {Promise<any>}
  */
-export var promiseAll = function(functions) {
+export var promiseAll = (functions) => {
     let promises = functions.map(f => f());
 
     return new Promise((resolve, reject) => {

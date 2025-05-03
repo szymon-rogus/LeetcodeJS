@@ -5,10 +5,10 @@
  * @param {number} t milliseconds
  * @return {Function}
  */
-export var debounce = function(fn, t) {
+export var debounce = (fn, t) => {
     let scheduledCall;
 
-    return function(...args) {
+    return (...args) => {
         clearTimeout(scheduledCall);
         scheduledCall = setTimeout(() => fn(...args), t);
     }
